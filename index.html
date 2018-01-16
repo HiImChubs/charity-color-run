@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Charity 5K</title>
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Capriola|Patua+One" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <img class="center" src="img/color_run.png" alt="Color Run Logo">
+    </header>
+
+    <section id="about">
+      <img src="img/saintjude.png" alt="Saint Jude">
+      <h2>Saint Jude Childrens Hospital</h2>
+      <p><a href="https://www.stjude.org/">Saint Jude</a> is a hospital for children diagnosed with cancer. They have been working hard to find a cure for cancer and much more. They have been studying and improving their facilities to improve the survivability and process of dealing with cancer in cutting edge ways. 25% of each ticket will be donated to the hospital.</p>
+      <h2>Current Reasearch</h2>
+      <ul>
+        <li>Bone Marrow Transplants</li>
+        <li>Gene Therapy</li>
+        <li>Biochemistyr of cancerous cells</li>
+        <li>Blood Diseases</li>
+        <li>Infectious Diseases</li>
+      </ul>
+    </section>
+
+    <section id="event">
+      <img class="left"src="img/colorrun.jpg" alt="Color Run">
+      <h2> Greenville Color Run </h2>
+      <p>This 5k will take you on a 2.5 mile run through Downtown Greenville, each ticket is 20 dollars. The run will start at 9 A.M at Fluor Field in Downtown Greenville. Shirts will be provided for all runners. Sign up below to reserve your spot in the run. Thank you.</p>
+
+    </section>
+
+    <section id="signup">
+      <h1>Sign Up Now!</h1>
+
+      <form>
+        <fieldset>
+        <legend>Sign-Up Info</legend>
+        <form class="pure-form pure-form-stacked">
+        <input id="name" type="name" placeholder="Name">
+        <span class="pure-form-message">This is a required field.</span>
+        <input id="email" type="email" placeholder="Email">
+        <span class="pure-form-message">This is a required field.</span>
+        <input id="adress" type="adress" placeholder="Adress">
+        <span class="pure-form-message">This is a required field.</span>
+        <input id="city" type="city" placeholder="City">
+        <span class="pure-form-message">This is a required field.</span>
+        <input id="zip" type="zip" placeholder="ZIP">
+        <br><input id="phone number" type="phone number" placeholder="Phone Number"></br>
+
+        <label for="state">State</label>
+        <select id="state">
+            <option>SC</option>
+            <option>NC</option>
+            <option>GA</option>
+            <option>TN</option>
+        </select>
+    </fieldset>
+</form>
+          </fieldset>
+
+        <fieldset>
+          <legend>Shirt & Payment</legend>
+          <br>
+            <label for="size">Select Size</label>  <select id="size" name="size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="extra Large">Extra Large</option>
+          </br>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Payment Info</legend>
+            <p>Select Card Type</p>
+              <input id="visa" type="radio" name="card" value="Visa" checked><label form="visa"> Visa </label>
+              <input id="mc" type="radio" name="card" value="Mastercard" checked><label form="mastercard"> Mastercard
+              <input id="disc" type="radio" name="card" value="Discovery" checked><label form="discovery"> Discovery<br>
+
+                <br><label for="cc_number">Credit Card Number</label>
+                <input id="cc_number" type="text" name="cc_number"></br>
+                <br><label for="cc_number">CVV Number</label>
+                <input id="cc_number" type="text" name="CVV"></br>
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+              </form>
+    </section>
+
+    <section id="hero">
+        <img src="img/hero-image.jpg" alt="Runners">
+    </section>
+
+    <footer>
+      This page was designed for a class project and is not a real event.
+    </footer>
+
+  </div>
+
+</body>
+</html>

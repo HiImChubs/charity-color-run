@@ -1,0 +1,97 @@
+body {
+  background-color: #cccccc;
+}
+
+div.container {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "hero"
+    "event"
+    "about"
+    "signup"
+    "footer";
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+header {
+  background-color: #ffffff;
+  grid-area: header;
+  font-size: 28px;
+  font-family:  'Patua One', sans-serif;
+}
+
+
+main {
+
+}
+
+img{
+  max-width: 100%;
+}
+section {
+    min-height: 300px;
+}
+
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.right {
+  float: right;
+}
+img.left{
+  float: left;
+  padding-right: 10px;
+}
+
+section#about {
+  background-color: #ffff66;
+  grid-area: about;
+  font-family: 'Capriola', sans-serif;
+}
+
+section#event {
+  background-color: #e85cac;
+  grid-area: event;
+  font-family: 'Capriola', sans-serif;
+}
+
+section#signup {
+  background-color: #55bffc;
+  grid-area: signup;
+  font-family:  'Patua One', sans-serif;
+
+}
+
+section#hero {
+  grid-area: hero;
+  display: none;
+}
+
+footer {
+  background-color: #ffffff;
+  grid-area: footer;
+}
+
+@media (min-width: 800px) {
+  div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "hero   hero"
+      "event event"
+      "about signup"
+      "footer footer";
+  }
+
+  section#hero {
+    display: block;
+  }
+}
